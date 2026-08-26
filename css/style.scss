@@ -1,0 +1,321 @@
+@charset "utf-8";
+
+@use "_work_template.scss";
+@use "_scroll_btn.scss";
+@use "_hamburger.scss";
+
+/* ===============================
+   Variables
+================================ */
+$bp-sp: 767px;
+$bp-tab: 1080px;
+
+$color-bg: #f7f7f7;
+$color-text: #1a1211;
+$color-accent: #6375a7;
+$color-muted: #919191;
+
+/* ===============================
+   Base
+================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: min(96%, 1200px);
+  margin: 0 auto;
+  background-color: $color-bg;
+}
+
+.wrap {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: $color-text;
+  -webkit-text-size-adjust: none;
+
+  @media (max-width: $bp-sp) {
+    max-width: 350px;
+  }
+}
+
+.jump_point {
+  padding-top: 100px;
+  margin-top: 100px;
+
+  @media (max-width: $bp-sp) {
+    padding-top: 50px;
+    margin-top: 50px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.5rem;
+}
+
+/* ===============================
+   Header
+================================ */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 2.5rem 0 1rem;
+
+  img {
+    width: min(100%, 250px);
+
+    @media (max-width: $bp-sp) {
+      width: 75%;
+    }
+
+    @media (min-width: 768px) and (max-width: $bp-tab) {
+      width: 90%;
+    }
+  }
+
+  nav {
+    ul {
+      padding: 0;
+
+      li {
+        list-style: none;
+        display: inline;
+        margin: 0 10px;
+
+        a {
+          font-size: 1rem;
+          color: $color-text;
+          text-decoration: none;
+
+          &:hover {
+            color: $color-accent;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $bp-sp) {
+    position: sticky;
+    top: 40px;
+    height: 60px;
+    margin: 40px 0 24px;
+    z-index: 900;
+
+    nav ul {
+      position: absolute;
+      top: 30%;
+      left: 0;
+      width: 100%;
+      display: grid;
+      text-align: center;
+
+      li {
+        display: block;
+        padding: 20px;
+
+        a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+/* ===============================
+   Common Container
+================================ */
+.common-container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: $bp-sp) {
+    max-width: 100%;
+
+    h1 {
+      font-size: 1.2rem;
+      margin: 0 auto 50px;
+    }
+  }
+}
+
+/* ===============================
+   Works
+================================ */
+.works_list {
+  ul {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    margin: 0 auto;
+
+    li {
+      list-style: none;
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      span {
+        font-size: 12px;
+        color: $color-muted;
+      }
+
+      p {
+        padding: 1rem 0;
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media (max-width: $bp-tab) {
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: $bp-sp) {
+    ul {
+      gap: 1rem;
+
+      li {
+        span {
+          font-size: 0.6rem;
+        }
+
+        p {
+          font-size: 0.65rem;
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+
+/* ===============================
+   Profile / About
+================================ */
+.profile {
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    font-size: 14px;
+
+    span {
+      font-size: 19px;
+    }
+  }
+
+  @media (max-width: $bp-sp) {
+    flex-direction: column;
+    text-align: center;
+
+    p {
+      font-size: 0.7rem;
+
+      span {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+#profile-img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+
+  @media (max-width: $bp-sp) {
+    width: 60%;
+  }
+}
+
+/* ===============================
+   Concept
+================================ */
+.concept {
+  width: 100%;
+  text-align: center;
+
+  .caption {
+    span {
+      display: inline-block;
+      font-size: 16px;
+      padding: 5px;
+      border-bottom: 2px solid #dadada;
+    }
+
+    p {
+      font-size: 14px;
+      text-align: justify;
+    }
+  }
+
+  @media (max-width: $bp-sp) {
+    width: 80%;
+
+    .caption {
+      span {
+        font-size: 0.9rem;
+      }
+
+      p {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+/* ===============================
+   Skills
+================================ */
+.skills {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+  }
+
+  li {
+    width: min(96%, 400px);
+    margin: 10px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+/* ===============================
+   Footer
+================================ */
+.footer {
+  margin: 200px auto 50px;
+  text-align: center;
+
+  small,
+  span {
+    font-size: 10px;
+    display: block;
+  }
+}

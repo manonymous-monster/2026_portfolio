@@ -1,0 +1,552 @@
+@charset "UTF-8";
+.info-container .main-visual {
+  width: min(96%, 1000px);
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .info-container .main-visual {
+    width: min(96%, 1000px);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.info-container h2,
+.info-container h3,
+.info-container h4,
+.info-container h5,
+.info-container h6 {
+  color: #919191;
+  font-size: 12px;
+  padding: 5px;
+  border-bottom: 1px solid #dadada;
+  display: inline-block;
+}
+
+.caption-detail p {
+  font-size: 14px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .caption-detail p {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+}
+.design-comp {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.design-comp img {
+  width: min(100%, 1000px);
+  margin: 25px;
+}
+
+.design-comp .pc-size {
+  width: min(100%, 670px);
+  height: 100%;
+}
+
+.design-comp .sm-size {
+  width: min(100%, 200px);
+  height: 100%;
+}
+
+.design-comp .portfolio_border {
+  border: 1px solid #dadada;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .design-comp {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .design-comp .pc-size {
+    width: min(80%, 300px);
+    height: 100%;
+  }
+  .design-comp .sm-size {
+    width: min(80%, 200px);
+    height: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .info-container {
+    width: min(100%, 300px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.caption-detail {
+  width: min(100%, 900px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .caption-detail {
+    width: 80%;
+  }
+}
+.info-container .only-image {
+  width: min(96%, 500px);
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*========= ページトップのためのCSS ===============*/
+/*リンクの形状*/
+#page-top a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6375a7;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.6rem;
+  transition: all 0.3s ease 0s;
+  float: right;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  #page-top a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+#page-top a:hover {
+  background: #6375a7;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 2;
+  /*はじめは非表示*/
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+/*　上に上がる動き　*/
+#page-top.UpMove {
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*　下に下がる動き　*/
+#page-top.DownMove {
+  animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+}
+@media screen and (max-width: 767px) {
+  /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+  .openbtn {
+    /*ボタン内側の基点となるためrelativeを指定。
+    追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
+    position: relative;
+    background: #6375a7;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 0;
+    z-index: 1000;
+  }
+  /*ボタン内側*/
+  .openbtn span {
+    display: inline-block;
+    transition: all 0.4s; /*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 2px;
+    border-radius: 5px;
+    background: #fff;
+    width: 45%;
+  }
+  .openbtn span:nth-of-type(1) {
+    top: 13px;
+  }
+  .openbtn span:nth-of-type(2) {
+    top: 19px;
+  }
+  .openbtn span:nth-of-type(3) {
+    top: 25px;
+  }
+  .openbtn span:nth-of-type(3)::after {
+    content: "Menu"; /*3つ目の要素のafterにMenu表示を指定*/
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    color: #fff;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+  }
+  /*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
+  .openbtn.active span:nth-of-type(1) {
+    top: 14px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+  }
+  .openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .openbtn.active span:nth-of-type(3) {
+    top: 26px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+  }
+  .openbtn.active span:nth-of-type(3)::after {
+    content: "Close"; /*3つ目の要素のafterにClose表示を指定*/
+    transform: translateY(0) rotate(-45deg);
+    top: 5px;
+    left: 4px;
+  }
+  .header .nav {
+    display: block;
+    z-index: 800;
+    position: fixed;
+    top: 0;
+    right: -120%;
+    width: 100%;
+    transition: all 0.6s;
+  }
+  html.open .nav {
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position: fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+    top: 0;
+    right: 0%;
+    width: 100%;
+    height: 100vh;
+    /*ナビの高さ*/
+    background-color: #c8c8c8;
+    opacity: 0.9;
+    /*動き*/
+    transition: all 0.6s;
+    margin-left: -20px;
+  }
+  html.open .nav ul li a:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+  html.open body {
+    overflow: hidden;
+  }
+}
+/* ===============================
+   Variables
+================================ */
+/* ===============================
+   Base
+================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: min(96%, 1200px);
+  margin: 0 auto;
+  background-color: #f7f7f7;
+}
+
+.wrap {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #1a1211;
+  -webkit-text-size-adjust: none;
+}
+@media (max-width: 767px) {
+  .wrap {
+    max-width: 350px;
+  }
+}
+
+.jump_point {
+  padding-top: 100px;
+  margin-top: 100px;
+}
+@media (max-width: 767px) {
+  .jump_point {
+    padding-top: 50px;
+    margin-top: 50px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.5rem;
+}
+
+/* ===============================
+   Header
+================================ */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5rem 0 1rem;
+}
+.header img {
+  width: min(100%, 250px);
+}
+@media (max-width: 767px) {
+  .header img {
+    width: 75%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+  .header img {
+    width: 90%;
+  }
+}
+.header nav ul {
+  padding: 0;
+}
+.header nav ul li {
+  list-style: none;
+  display: inline;
+  margin: 0 10px;
+}
+.header nav ul li a {
+  font-size: 1rem;
+  color: #1a1211;
+  text-decoration: none;
+}
+.header nav ul li a:hover {
+  color: #6375a7;
+  opacity: 0.5;
+}
+@media (max-width: 767px) {
+  .header {
+    position: sticky;
+    top: 40px;
+    height: 60px;
+    margin: 40px 0 24px;
+    z-index: 900;
+  }
+  .header nav ul {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    display: grid;
+    text-align: center;
+  }
+  .header nav ul li {
+    display: block;
+    padding: 20px;
+  }
+  .header nav ul li a {
+    font-size: 1.2rem;
+  }
+}
+
+/* ===============================
+   Common Container
+================================ */
+.common-container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.common-container h1 {
+  text-align: center;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+}
+@media (max-width: 767px) {
+  .common-container {
+    max-width: 100%;
+  }
+  .common-container h1 {
+    font-size: 1.2rem;
+    margin: 0 auto 50px;
+  }
+}
+
+/* ===============================
+   Works
+================================ */
+.works_list ul {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+  margin: 0 auto;
+}
+.works_list ul li {
+  list-style: none;
+}
+.works_list ul li img {
+  width: 100%;
+  border-radius: 10px;
+}
+.works_list ul li span {
+  font-size: 12px;
+  color: #919191;
+}
+.works_list ul li p {
+  padding: 1rem 0;
+  font-size: 14px;
+}
+@media (max-width: 1080px) {
+  .works_list ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .works_list ul {
+    gap: 1rem;
+  }
+  .works_list ul li span {
+    font-size: 0.6rem;
+  }
+  .works_list ul li p {
+    font-size: 0.65rem;
+    padding: 15px;
+  }
+}
+
+/* ===============================
+   Profile / About
+================================ */
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+.profile p {
+  font-size: 14px;
+}
+.profile p span {
+  font-size: 19px;
+}
+@media (max-width: 767px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile p {
+    font-size: 0.7rem;
+  }
+  .profile p span {
+    font-size: 0.9rem;
+  }
+}
+
+#profile-img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  #profile-img {
+    width: 60%;
+  }
+}
+
+/* ===============================
+   Concept
+================================ */
+.concept {
+  width: 100%;
+  text-align: center;
+}
+.concept .caption span {
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px;
+  border-bottom: 2px solid #dadada;
+}
+.concept .caption p {
+  font-size: 14px;
+  text-align: justify;
+}
+@media (max-width: 767px) {
+  .concept {
+    width: 80%;
+  }
+  .concept .caption span {
+    font-size: 0.9rem;
+  }
+  .concept .caption p {
+    font-size: 0.7rem;
+  }
+}
+
+/* ===============================
+   Skills
+================================ */
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+.skills li {
+  width: min(96%, 400px);
+  margin: 10px;
+}
+.skills p {
+  font-size: 14px;
+}
+
+/* ===============================
+   Footer
+================================ */
+.footer {
+  margin: 200px auto 50px;
+  text-align: center;
+}
+.footer small,
+.footer span {
+  font-size: 10px;
+  display: block;
+}/*# sourceMappingURL=style.css.map */

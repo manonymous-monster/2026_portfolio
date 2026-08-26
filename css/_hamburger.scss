@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+//スマホサイズ
+//navをハンバーガーメニューにする
+@media screen and (max-width:767px) {
+
+/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+.openbtn{
+	/*ボタン内側の基点となるためrelativeを指定。
+追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
+	position: relative;
+	background:#6375a7;
+	cursor: pointer;
+    width: 50px;
+    height:50px;
+	border-radius: 5px;
+
+	margin:0;
+	z-index: 1000;
+}
+
+/*ボタン内側*/
+.openbtn span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 2px;
+    border-radius: 5px;
+	background: #fff;
+  	width: 45%;
+  }
+
+
+.openbtn span:nth-of-type(1) {
+	top:13px;	
+}
+
+.openbtn span:nth-of-type(2) {
+	top:19px;
+}
+
+.openbtn span:nth-of-type(3) {
+	top:25px;
+}
+
+.openbtn span:nth-of-type(3)::after {
+	content:"Menu";/*3つ目の要素のafterにMenu表示を指定*/
+	position: absolute;
+	top:5px;
+	left:-2px;
+	color: #fff;
+	font-size: 0.6rem;
+	text-transform: uppercase;
+}
+
+/*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
+
+.openbtn.active span:nth-of-type(1) {
+    top: 14px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+	opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+    top: 26px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(3)::after {
+	content:"Close";/*3つ目の要素のafterにClose表示を指定*/
+    transform: translateY(0) rotate(-45deg);
+	top:5px;
+	left:4px;
+}
+
+//スマホサイズ
+//navをハンバーガーメニューにする
+.header .nav {
+    display: block;
+    z-index: 800;
+    position: fixed;
+    top: 0;
+    right: -120%;
+    width: 100%;
+    transition: all 0.6s;
+}
+  
+//activeのときだけ、navを表示する
+html.open .nav {
+	/*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+	position: fixed;
+	z-index: 999;
+	/*ナビのスタート位置と形状*/
+	top: 0;
+	right: 0%;
+	width: 100%;
+	height: 100vh;
+	/*ナビの高さ*/
+	background-color: #c8c8c8;
+	opacity: 0.9;
+	/*動き*/
+	transition: all 0.6s;
+	//なんか幅がおかしいので微調整
+	margin-left: -20px;
+  }
+  
+	//navホバー時
+	html.open .nav ul li a:hover {
+	opacity: 0.5;
+	transition: 0.3s;
+	}
+	html.open body {
+		overflow: hidden;
+	}
+}

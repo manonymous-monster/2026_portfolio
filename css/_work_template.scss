@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+
+//画像に角丸をつける
+.info-container .main-visual {
+    width: min(96%,1000px);
+    border-radius: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//スマホサイズ
+@media screen and (max-width:767px) {
+.info-container .main-visual {
+    width: min(96%, 1000px);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+//題目の文字色を変更
+.info-container h2,
+.info-container h3,
+.info-container h4,
+.info-container h5,
+.info-container h6
+ {
+    color: #919191;
+    font-size: 12px;
+    padding: 5px;
+    //下線を設定
+    border-bottom: 1px solid #dadada;
+    display: inline-block;
+}
+.caption-detail p {
+    font-size: 14px;
+    padding: 5px;
+}
+//スマホサイズ
+@media screen and (max-width:767px) {
+    .caption-detail p {
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+}
+
+// デザインカンプエリアの並列表示
+.design-comp {
+    margin-top:100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.design-comp img {
+    width: min(100%,1000px);
+    margin: 25px;
+}
+.design-comp .pc-size {
+    width: min(100%, 670px);
+    height: 100%;
+}
+.design-comp .sm-size{
+    width: min(100%,200px);
+    height: 100%;
+}
+.design-comp .portfolio_border {
+    border: 1px solid #dadada;
+}
+//タブレットサイズ
+@media screen and (min-width:768px) and (max-width:1080px) {
+    .design-comp {
+        margin-top:100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    // .design-comp img {
+    //     width: min(100%,1000px);
+    //     margin: 25px;
+    // }
+    .design-comp .pc-size {
+        width: min(80%, 300px);
+        height: 100%;
+    }
+    .design-comp .sm-size{
+        width: min(80%,200px);
+        height: 100%;
+    }
+}
+//スマホサイズ
+@media screen and (max-width:767px)  {
+    .info-container {
+        width: min(100%,300px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+//キャプションエリア幅設定
+.caption-detail {
+    width: min(100%,900px);
+    margin-left: auto;
+    margin-right: auto;
+}
+//タブレットサイズ
+@media screen and (min-width:768px) and (max-width:1080px) {
+    .caption-detail {
+        width: 80%;
+    }
+}
+//バナーなどの掲載ページの画像サイズを設定
+.info-container .only-image {
+    width: min(96%, 500px);
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,12 @@
+# OS
+.DS_Store
+
+# Local images (not committed)
+images/
+
+# Old work archives (kept locally, not committed)
+works/original/
+
+# Build / editor leftovers
+css/*.map
+css/OLD_style.txt

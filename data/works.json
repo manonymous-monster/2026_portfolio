@@ -1,0 +1,210 @@
+[
+  {
+    "id": "sample-web-01",
+    "title": "サンプルコーポレートサイト",
+    "category": "WEBサイト",
+    "type": "自主制作",
+    "year": "2026",
+    "project": "架空企業のコーポレートサイト（仮データ）",
+    "thumbnail": "images/placeholder.svg",
+    "visual": "images/placeholder.svg",
+    "sections": [
+      {
+        "heading": "目的",
+        "body": "仮データです。企業のサービス内容と信頼性を伝えるランディングを想定しています。後から実プロジェクトの文言に差し替えてください。"
+      },
+      {
+        "heading": "情報設計",
+        "body": "トップ・サービス・実績・お問い合わせの4セクション構成。スクロールで要点が追えるシンプルな導線にしています。"
+      },
+      {
+        "heading": "デザイン",
+        "body": "余白とタイポグラフィを軸にしたレイアウト。ブランドカラーは後から差し替えやすいよう、CSS変数前提の構成を想定しています。"
+      },
+      {
+        "heading": "制作時間",
+        "body": "企画・デザイン 1週間\nコーディング 1週間"
+      }
+    ],
+    "designComps": [
+      {
+        "src": "images/placeholder.svg",
+        "alt": "PCモック（仮）",
+        "size": "pc"
+      },
+      {
+        "src": "images/placeholder.svg",
+        "alt": "SPモック（仮）",
+        "size": "sm"
+      }
+    ]
+  },
+  {
+    "id": "sample-web-02",
+    "title": "サンプルカフェサイト",
+    "category": "WEBサイト",
+    "type": "自主制作",
+    "year": "2026",
+    "project": "架空カフェの紹介サイト（仮データ）",
+    "thumbnail": "images/placeholder.svg",
+    "visual": "images/placeholder.svg",
+    "sections": [
+      {
+        "heading": "目的",
+        "body": "仮データです。来店前に雰囲気とメニューが伝わるサイトを想定しています。"
+      },
+      {
+        "heading": "情報設計",
+        "body": "コンセプト・メニュー・アクセスを短いブロックで区切り、スマホでも読みやすい順序にしています。"
+      },
+      {
+        "heading": "デザイン",
+        "body": "写真主役のビジュアルと、柔らかいトーンのテキストエリアを組み合わせる想定です。"
+      },
+      {
+        "heading": "制作時間",
+        "body": "企画・デザイン 5日\nコーディング 1週間"
+      }
+    ],
+    "designComps": [
+      {
+        "src": "images/placeholder.svg",
+        "alt": "PCモック（仮）",
+        "size": "pc"
+      },
+      {
+        "src": "images/placeholder.svg",
+        "alt": "SPモック（仮）",
+        "size": "sm"
+      }
+    ]
+  },
+  {
+    "id": "sample-lp-01",
+    "title": "サンプルランディングページ",
+    "category": "WEBサイト",
+    "type": "課題制作",
+    "year": "2025",
+    "project": "架空サービスのLP（仮データ）",
+    "thumbnail": "images/placeholder.svg",
+    "visual": "images/placeholder.svg",
+    "sections": [
+      {
+        "heading": "目的",
+        "body": "仮データです。申し込み導線を一本化したLPを想定しています。"
+      },
+      {
+        "heading": "情報設計",
+        "body": "課題提起 → 解決策 → 機能紹介 → CTA の流れで構成しています。"
+      },
+      {
+        "heading": "デザイン",
+        "body": "ファーストビューで価値提案を伝え、下部で詳細とCTAを繰り返す構成です。"
+      },
+      {
+        "heading": "制作時間",
+        "body": "企画・デザイン 3日\nコーディング 4日"
+      }
+    ],
+    "designComps": [
+      {
+        "src": "images/placeholder.svg",
+        "alt": "PCモック（仮）",
+        "size": "pc"
+      }
+    ]
+  },
+  {
+    "id": "sample-graphic-01",
+    "title": "サンプルグラフィック",
+    "category": "デザイン",
+    "type": "自主制作",
+    "year": "2025",
+    "project": "架空イベントのキービジュアル（仮データ）",
+    "thumbnail": "images/placeholder.svg",
+    "visual": "images/placeholder.svg",
+    "sections": [
+      {
+        "heading": "目的",
+        "body": "仮データです。イベント告知用のメインビジュアル制作を想定しています。"
+      },
+      {
+        "heading": "デザイン",
+        "body": "タイトル可読性を優先しつつ、余白とアクセントカラーで季節感を出す想定です。"
+      },
+      {
+        "heading": "制作時間",
+        "body": "ラフ〜仕上げ 3日"
+      }
+    ],
+    "designComps": [
+      {
+        "src": "images/placeholder.svg",
+        "alt": "グラフィック（仮）",
+        "size": "pc"
+      }
+    ]
+  },
+  {
+    "id": "sample-illust-01",
+    "title": "サンプルイラスト",
+    "category": "イラスト",
+    "type": "自主制作",
+    "year": "2025",
+    "project": "キャラクターイラスト（仮データ）",
+    "thumbnail": "images/placeholder.svg",
+    "visual": "images/placeholder.svg",
+    "sections": [
+      {
+        "heading": "目的",
+        "body": "仮データです。ポートフォリオ用のイラスト作品枠として配置しています。"
+      },
+      {
+        "heading": "デザイン",
+        "body": "線と塗り分けでキャラクターの印象が伝わる構図を想定しています。"
+      },
+      {
+        "heading": "制作時間",
+        "body": "ラフ〜仕上げ 2日"
+      }
+    ],
+    "designComps": [
+      {
+        "src": "images/placeholder.svg",
+        "alt": "イラスト（仮）",
+        "size": "pc"
+      }
+    ]
+  },
+  {
+    "id": "sample-banner-01",
+    "title": "サンプルバナーセット",
+    "category": "デザイン",
+    "type": "自主制作",
+    "year": "2024",
+    "project": "架空キャンペーンバナー（仮データ）",
+    "thumbnail": "images/placeholder.svg",
+    "visual": "images/placeholder.svg",
+    "sections": [
+      {
+        "heading": "目的",
+        "body": "仮データです。SNS・Web広告向けのバナーバリエーションを想定しています。"
+      },
+      {
+        "heading": "デザイン",
+        "body": "サイズ違いでも訴求文が読めるよう、要素の優先順位を揃えています。"
+      },
+      {
+        "heading": "制作時間",
+        "body": "企画〜制作 2日"
+      }
+    ],
+    "designComps": [
+      {
+        "src": "images/placeholder.svg",
+        "alt": "バナー（仮）",
+        "size": "pc"
+      }
+    ]
+  }
+]
