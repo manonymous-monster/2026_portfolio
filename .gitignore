@@ -20,6 +20,9 @@ images/*
 !images/windows.png
 !images/code.png
 
+# Keep OS junk out even under allowed image folders
+images/**/.DS_Store
+
 # Old work archives (kept locally, not committed)
 works/original/
 
