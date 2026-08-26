@@ -7,8 +7,8 @@
     "year": "2025.7–2026.6",
     "project": "出版社コーポレートサイトリニューアル",
     "url": "https://www.kyobunkwan.co.jp/",
-    "thumbnail": "images/placeholder.svg",
-    "visual": "images/placeholder.svg",
+    "thumbnail": "images/works/bookstore-corp/bookstore-corp_sitetop.webp",
+    "visual": "images/works/bookstore-corp/bookstore-corp_sitetop.webp",
     "sections": [
       {
         "heading": "Client",
@@ -37,8 +37,38 @@
     ],
     "designComps": [
       {
-        "src": "images/placeholder.svg",
-        "alt": "出版社コーポレートサイトリニューアル（仮画像）",
+        "src": "images/works/bookstore-corp/bookstore-corp_01.webp",
+        "alt": "bookstore-corp 01",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/bookstore-corp/bookstore-corp_02.webp",
+        "alt": "bookstore-corp 02",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/bookstore-corp/bookstore-corp_03.webp",
+        "alt": "bookstore-corp 03",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/bookstore-corp/bookstore-corp_04.webp",
+        "alt": "bookstore-corp 04",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/bookstore-corp/bookstore-corp_05.webp",
+        "alt": "bookstore-corp 05",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/bookstore-corp/bookstore-corp_06.webp",
+        "alt": "bookstore-corp 06",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/bookstore-corp/bookstore-corp_07.webp",
+        "alt": "bookstore-corp 07",
         "size": "pc"
       }
     ]
@@ -91,8 +121,8 @@
     "year": "2025.1–2026.3",
     "project": "自社オウンドメディアサイトリニューアル",
     "url": "https://wand.plus/",
-    "thumbnail": "images/placeholder.svg",
-    "visual": "images/placeholder.svg",
+    "thumbnail": "images/works/owned-media/owned-media-site.webp",
+    "visual": "images/works/owned-media/owned-media-site.webp",
     "sections": [
       {
         "heading": "Date",
@@ -117,8 +147,18 @@
     ],
     "designComps": [
       {
-        "src": "images/placeholder.svg",
-        "alt": "自社オウンドメディアサイト（仮画像）",
+        "src": "images/works/owned-media/owned-media_01.webp",
+        "alt": "owned-media 01",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/owned-media/owned-media_02.webp",
+        "alt": "owned-media 02",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/owned-media/owned-media_03.webp",
+        "alt": "owned-media 03",
         "size": "pc"
       }
     ]
@@ -130,8 +170,8 @@
     "type": "クライアントワーク",
     "year": "2025.8",
     "project": "プラモデル販売サイト",
-    "thumbnail": "images/works/plamodel-site.webp",
-    "visual": "images/works/plamodel-site.webp",
+    "thumbnail": "images/works/plamodel-site/plamodel-site.webp",
+    "visual": "images/works/plamodel-site/plamodel-site.webp",
     "sections": [
       {
         "heading": "Client",
@@ -156,18 +196,18 @@
     ],
     "designComps": [
       {
-        "src": "images/works/plamodel-site_01.webp",
-        "alt": "プラモデル販売サイト 画面01",
+        "src": "images/works/plamodel-site/plamodel-site_01.webp",
+        "alt": "plamodel-site 01",
         "size": "pc"
       },
       {
-        "src": "images/works/plamodel-site_02.webp",
-        "alt": "プラモデル販売サイト 画面02",
+        "src": "images/works/plamodel-site/plamodel-site_02.webp",
+        "alt": "plamodel-site 02",
         "size": "pc"
       },
       {
-        "src": "images/works/plamodel-site_03.webp",
-        "alt": "プラモデル販売サイト 画面03",
+        "src": "images/works/plamodel-site/plamodel-site_03.webp",
+        "alt": "plamodel-site 03",
         "size": "pc"
       }
     ]
@@ -179,8 +219,8 @@
     "type": "クライアントワーク",
     "year": "2025.3",
     "project": "飲食店運営会社サイト",
-    "thumbnail": "images/works/restaurant-site.webp",
-    "visual": "images/works/restaurant-site.webp",
+    "thumbnail": "images/works/restaurant-site/restaurant-site.webp",
+    "visual": "images/works/restaurant-site/restaurant-site.webp",
     "sections": [
       {
         "heading": "Client",
@@ -205,18 +245,77 @@
     ],
     "designComps": [
       {
-        "src": "images/works/restaurant-site_01.webp",
-        "alt": "飲食店運営会社サイト 画面01",
+        "src": "images/works/restaurant-site/restaurant-site_01.webp",
+        "alt": "restaurant-site 01",
         "size": "pc"
       },
       {
-        "src": "images/works/restaurant-site_02.webp",
-        "alt": "飲食店運営会社サイト 画面02",
+        "src": "images/works/restaurant-site/restaurant-site_02.webp",
+        "alt": "restaurant-site 02",
         "size": "pc"
       },
       {
-        "src": "images/works/restaurant-site_03.webp",
-        "alt": "飲食店運営会社サイト 画面03",
+        "src": "images/works/restaurant-site/restaurant-site_03.webp",
+        "alt": "restaurant-site 03",
+        "size": "pc"
+      }
+    ]
+  },
+  {
+    "id": "goodtimingtea-shopify",
+    "title": "飲食店向け Shopify 自社サイト兼ECサイト構築",
+    "category": "WEBサイト",
+    "type": "クライアントワーク",
+    "year": "2024.12–2025.2",
+    "project": "飲食店様のShopifyでの自社サイト兼ECサイト構築",
+    "url": "https://goodtimingtea.jp/",
+    "thumbnail": "images/works/tea-shop/tea-shop_sitetop.webp",
+    "visual": "images/works/tea-shop/tea-shop_sitetop.webp",
+    "sections": [
+      {
+        "heading": "Client",
+        "body": "日本茶専門の飲食店"
+      },
+      {
+        "heading": "Date",
+        "body": "2024.12〜2025.2"
+      },
+      {
+        "heading": "人員構成",
+        "body": "・デザイナー1名\n・ディレクター1名\n・開発メンバー2名"
+      },
+      {
+        "heading": "担当業務",
+        "body": "・一部デザイン実装、オフショアチームへの依頼やマネジメント、お客様対応、サーバー部分の諸設定など"
+      },
+      {
+        "heading": "ポイント",
+        "body": "主なデザイン実装はオフショアのエンジニアとなります。言語の壁がありながらも、オフショアチームの作業マネジメントや実装依頼を行いました。またリリースにあたり諸設定やお客様対応を対応いたしました。"
+      },
+      {
+        "heading": "URL",
+        "body": "https://goodtimingtea.jp/"
+      }
+    ],
+    "designComps": [
+      {
+        "src": "images/works/tea-shop/tea-shop_01.webp",
+        "alt": "tea-shop 01",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/tea-shop/tea-shop_02.webp",
+        "alt": "tea-shop 02",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/tea-shop/tea-shop_03.webp",
+        "alt": "tea-shop 03",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/tea-shop/tea-shop_04.webp",
+        "alt": "tea-shop 04",
         "size": "pc"
       }
     ]
@@ -229,8 +328,8 @@
     "year": "2024.9–2024.11",
     "project": "出版社様のCS-CartでのECサイト構築",
     "url": "https://thecrosskbk.jp/",
-    "thumbnail": "images/placeholder.svg",
-    "visual": "images/placeholder.svg",
+    "thumbnail": "images/works/bookstore-mole/bookstore-mole_sitetop.webp",
+    "visual": "images/works/bookstore-mole/bookstore-mole_sitetop.webp",
     "sections": [
       {
         "heading": "Client",
@@ -259,8 +358,28 @@
     ],
     "designComps": [
       {
-        "src": "images/placeholder.svg",
-        "alt": "出版社向けCS-Cart ECサイト（仮画像）",
+        "src": "images/works/bookstore-mole/bookstore-mole_01.webp",
+        "alt": "bookstore-mole 01",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/bookstore-mole/bookstore-mole_02.webp",
+        "alt": "bookstore-mole 02",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/bookstore-mole/bookstore-mole_03.webp",
+        "alt": "bookstore-mole 03",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/bookstore-mole/bookstore-mole_04.webp",
+        "alt": "bookstore-mole 04",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/bookstore-mole/bookstore-mole_05.webp",
+        "alt": "bookstore-mole 05",
         "size": "pc"
       }
     ]
