@@ -229,6 +229,49 @@ h6 {
   }
 }
 
+.profile-block {
+  width: 100%;
+  margin: 4rem auto 0;
+  text-align: left;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    color: var(--color-muted);
+    font-size: var(--font-size-small);
+    padding: 5px 0;
+    border-bottom: 1px solid var(--color-border);
+    display: inline-block;
+    margin: 1.25rem 0 0.5rem;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+.profile-list {
+  margin: 0.75rem 0 1rem;
+  padding-left: 1.25rem;
+
+  li {
+    list-style: disc;
+    margin: 0.35rem 0;
+  }
+}
+
+.profile .caption h3 {
+  color: var(--color-muted);
+  font-size: var(--font-size-small);
+  padding: 5px 0;
+  border-bottom: 1px solid var(--color-border);
+  display: inline-block;
+  margin: 0.75rem 0 0.5rem;
+}
+
 /* ===============================
    Skills
 ================================ */
