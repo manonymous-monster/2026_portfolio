@@ -1,208 +1,266 @@
 [
   {
-    "id": "sample-web-01",
-    "title": "サンプルコーポレートサイト",
+    "id": "kyobunkwan-corporate",
+    "title": "出版社コーポレートサイトリニューアル",
     "category": "WEBサイト",
-    "type": "自主制作",
-    "year": "2026",
-    "project": "架空企業のコーポレートサイト（仮データ）",
+    "type": "クライアントワーク",
+    "year": "2025.7–2026.6",
+    "project": "出版社コーポレートサイトリニューアル",
+    "url": "https://www.kyobunkwan.co.jp/",
     "thumbnail": "images/placeholder.svg",
     "visual": "images/placeholder.svg",
     "sections": [
       {
-        "heading": "目的",
-        "body": "仮データです。企業のサービス内容と信頼性を伝えるランディングを想定しています。後から実プロジェクトの文言に差し替えてください。"
+        "heading": "Client",
+        "body": "出版社"
       },
       {
-        "heading": "情報設計",
-        "body": "トップ・サービス・実績・お問い合わせの4セクション構成。スクロールで要点が追えるシンプルな導線にしています。"
+        "heading": "Date",
+        "body": "2025.7〜2026.6"
       },
       {
-        "heading": "デザイン",
-        "body": "余白とタイポグラフィを軸にしたレイアウト。ブランドカラーは後から差し替えやすいよう、CSS変数前提の構成を想定しています。"
+        "heading": "人員構成",
+        "body": "・デザイナー1名\n・ディレクター1名\n・開発メンバー2名"
       },
       {
-        "heading": "制作時間",
-        "body": "企画・デザイン 1週間\nコーディング 1週間"
+        "heading": "担当業務",
+        "body": "・機能設計・開発と実装、データ移行・リリース作業"
+      },
+      {
+        "heading": "ポイント",
+        "body": "WordPressからの別CMS移行案件で、htmxでの絞り込み機能実装・クロンによるタグの自動管理・データ移行作業なども担当しました。マルチブログのように運営しているサイトのため7ブログ分のデザイン実装・機能実装があり、70ページほどを二人で分担して実装しました。"
+      },
+      {
+        "heading": "URL",
+        "body": "https://www.kyobunkwan.co.jp/"
       }
     ],
     "designComps": [
       {
         "src": "images/placeholder.svg",
-        "alt": "PCモック（仮）",
+        "alt": "出版社コーポレートサイトリニューアル（仮画像）",
         "size": "pc"
-      },
-      {
-        "src": "images/placeholder.svg",
-        "alt": "SPモック（仮）",
-        "size": "sm"
       }
     ]
   },
   {
-    "id": "sample-web-02",
-    "title": "サンプルカフェサイト",
+    "id": "andplus-corporate",
+    "title": "自社コーポレートサイト（ヘッドレス構成からの移行）",
     "category": "WEBサイト",
-    "type": "自主制作",
-    "year": "2026",
-    "project": "架空カフェの紹介サイト（仮データ）",
+    "type": "自社制作",
+    "year": "2025.2–2026.3",
+    "project": "自社コーポレートサイトをヘッドレス構成からデザインテーマへ変更",
+    "url": "https://www.andplus.co.jp/",
     "thumbnail": "images/placeholder.svg",
     "visual": "images/placeholder.svg",
     "sections": [
       {
-        "heading": "目的",
-        "body": "仮データです。来店前に雰囲気とメニューが伝わるサイトを想定しています。"
+        "heading": "Date",
+        "body": "2025.2〜2026.3"
       },
       {
-        "heading": "情報設計",
-        "body": "コンセプト・メニュー・アクセスを短いブロックで区切り、スマホでも読みやすい順序にしています。"
+        "heading": "人員構成",
+        "body": "・デザイナー1名\n・開発メンバー3名"
       },
       {
-        "heading": "デザイン",
-        "body": "写真主役のビジュアルと、柔らかいトーンのテキストエリアを組み合わせる想定です。"
+        "heading": "担当業務",
+        "body": "・実装可否検討やオフショアエンジニアへの実装依頼、デプロイ作業、管理画面での諸設定"
       },
       {
-        "heading": "制作時間",
-        "body": "企画・デザイン 5日\nコーディング 1週間"
+        "heading": "ポイント",
+        "body": "WordPress + Gatsby のヘッドレス構成で実装されたコーポレートサイトを、標準の管理画面からの更新・デザインテーマで実装されたサイトに内部をリニューアルしました。社内での更新・管理作業のハードルが上がり、デプロイする時間も長くなってきた背景があり、ヘッドレス構成を廃したサイト運用に戻しました。\n\nヘッドレス→デザインテーマ移行の実現可否やオフショアチームとの折衝・依頼・調整を行いました。またテスト環境の構築やデプロイ作業、管理画面での諸設定、サイト公開作業なども行いました。"
+      },
+      {
+        "heading": "URL",
+        "body": "https://www.andplus.co.jp/"
       }
     ],
     "designComps": [
       {
         "src": "images/placeholder.svg",
-        "alt": "PCモック（仮）",
+        "alt": "自社コーポレートサイト（仮画像）",
         "size": "pc"
-      },
-      {
-        "src": "images/placeholder.svg",
-        "alt": "SPモック（仮）",
-        "size": "sm"
       }
     ]
   },
   {
-    "id": "sample-lp-01",
-    "title": "サンプルランディングページ",
+    "id": "wand-plus-media",
+    "title": "自社オウンドメディアサイトリニューアル",
     "category": "WEBサイト",
-    "type": "課題制作",
-    "year": "2025",
-    "project": "架空サービスのLP（仮データ）",
+    "type": "自社制作",
+    "year": "2025.1–2026.3",
+    "project": "自社オウンドメディアサイトリニューアル",
+    "url": "https://wand.plus/",
     "thumbnail": "images/placeholder.svg",
     "visual": "images/placeholder.svg",
     "sections": [
       {
-        "heading": "目的",
-        "body": "仮データです。申し込み導線を一本化したLPを想定しています。"
+        "heading": "Date",
+        "body": "2025.1〜2026.3"
       },
       {
-        "heading": "情報設計",
-        "body": "課題提起 → 解決策 → 機能紹介 → CTA の流れで構成しています。"
+        "heading": "人員構成",
+        "body": "・デザイナー1名\n・ディレクター1名\n・開発メンバー3名"
       },
       {
-        "heading": "デザイン",
-        "body": "ファーストビューで価値提案を伝え、下部で詳細とCTAを繰り返す構成です。"
+        "heading": "担当業務",
+        "body": "・オフショアエンジニアへの実装依頼、デプロイ作業、管理画面での諸設定など"
       },
       {
-        "heading": "制作時間",
-        "body": "企画・デザイン 3日\nコーディング 4日"
+        "heading": "ポイント",
+        "body": "WordPressで古いデザインテーマ・バージョンからリニューアルしました。オフショアチームの作業マネジメントや実装依頼を行いました。またテスト環境の構築やデプロイ作業、管理画面での諸設定、jsonデータの修正や軽微なデザイン修正、サイト公開作業なども行いました。"
+      },
+      {
+        "heading": "URL",
+        "body": "https://wand.plus/"
       }
     ],
     "designComps": [
       {
         "src": "images/placeholder.svg",
-        "alt": "PCモック（仮）",
+        "alt": "自社オウンドメディアサイト（仮画像）",
         "size": "pc"
       }
     ]
   },
   {
-    "id": "sample-graphic-01",
-    "title": "サンプルグラフィック",
-    "category": "デザイン",
-    "type": "自主制作",
-    "year": "2025",
-    "project": "架空イベントのキービジュアル（仮データ）",
-    "thumbnail": "images/placeholder.svg",
-    "visual": "images/placeholder.svg",
+    "id": "plamodel-site",
+    "title": "プラモデル販売サイト",
+    "category": "WEBサイト",
+    "type": "クライアントワーク",
+    "year": "2025.8",
+    "project": "プラモデル販売サイト",
+    "thumbnail": "images/works/plamodel-site.webp",
+    "visual": "images/works/plamodel-site.webp",
     "sections": [
       {
-        "heading": "目的",
-        "body": "仮データです。イベント告知用のメインビジュアル制作を想定しています。"
+        "heading": "Client",
+        "body": "プラモデル販売会社様"
       },
       {
-        "heading": "デザイン",
-        "body": "タイトル可読性を優先しつつ、余白とアクセントカラーで季節感を出す想定です。"
+        "heading": "Date",
+        "body": "2025.8"
       },
       {
-        "heading": "制作時間",
-        "body": "ラフ〜仕上げ 3日"
+        "heading": "担当範囲",
+        "body": "・シミュレーター機能を使用するCMSに合わせて設計を行う\n・一部のデザイン実装、多言語対応\n・オフショアチームの管理や実装依頼、コミュニケーション\n・公開作業、お客様対応、サーバー部分の作業\n※デザイン決定や要件定義には直接関与していません"
+      },
+      {
+        "heading": "実装・設計を通して意識したこと",
+        "body": "本案件は、身体の部位を付け替えてカスタマイズできるプラモデルを扱うECサイトであり、シミュレーター機能がユーザー体験の中核となるプロダクトでした。\n\n今後、商品数やシミュレーション可能なパーツが増えていくことが想定されていたため、機能追加に耐えられる、保守性の高い管理方法とデータ構造を重視して設計を行いました。\n\n使用しているCMS（CS-Cart）の制約を踏まえつつ、以下の点を判断軸としました。\n\n管理画面上での運用負荷が増えないこと\nデータ追加時に既存機能へ影響が出にくいこと\n\n管理方法やデータ取得の方針、PHP部分の設計については上司と相談しながら決定し、実装フェーズではオフショアエンジニアにデザイン実装を依頼しました。\n\n仕様共有や進行管理も担当しています。"
+      },
+      {
+        "heading": "学び・次に活かしたいこと",
+        "body": "過去にも同様のシミュレーター機能を持つECサイトをリリースしたことがあったようですが、拡張を前提としない設計が原因で不具合が頻発していたと聞いています。\n本案件ではその点を踏まえて設計を行った結果、大きな不具合もなく、今後の商品展開にも対応可能な構成を実現することができました。\nタイトなスケジュールの中でもオンスケジュールで公開でき、設計面について評価をいただけたことは大きな自信につながりました。\n\nまた、SNS上で実際にユーザーがシミュレーター機能を楽しんでいる様子を見る機会があり、機能や設計が体験価値として届いていることを実感しました。\n\nこの経験を通して、UIだけでなく設計や運用も含めてUXであるという意識が強まりました。UI/UXに強い関心を持つようになった案件です。"
       }
     ],
     "designComps": [
       {
-        "src": "images/placeholder.svg",
-        "alt": "グラフィック（仮）",
+        "src": "images/works/plamodel-site_01.webp",
+        "alt": "プラモデル販売サイト 画面01",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/plamodel-site_02.webp",
+        "alt": "プラモデル販売サイト 画面02",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/plamodel-site_03.webp",
+        "alt": "プラモデル販売サイト 画面03",
         "size": "pc"
       }
     ]
   },
   {
-    "id": "sample-illust-01",
-    "title": "サンプルイラスト",
-    "category": "イラスト",
-    "type": "自主制作",
-    "year": "2025",
-    "project": "キャラクターイラスト（仮データ）",
-    "thumbnail": "images/placeholder.svg",
-    "visual": "images/placeholder.svg",
+    "id": "restaurant-site",
+    "title": "飲食店運営会社サイト",
+    "category": "WEBサイト",
+    "type": "クライアントワーク",
+    "year": "2025.3",
+    "project": "飲食店運営会社サイト",
+    "thumbnail": "images/works/restaurant-site.webp",
+    "visual": "images/works/restaurant-site.webp",
     "sections": [
       {
-        "heading": "目的",
-        "body": "仮データです。ポートフォリオ用のイラスト作品枠として配置しています。"
+        "heading": "Client",
+        "body": "飲食店運営会社様"
       },
       {
-        "heading": "デザイン",
-        "body": "線と塗り分けでキャラクターの印象が伝わる構図を想定しています。"
+        "heading": "Date",
+        "body": "2025.3"
       },
       {
-        "heading": "制作時間",
-        "body": "ラフ〜仕上げ 2日"
+        "heading": "担当範囲",
+        "body": "・デザイナーが作成したデザインをもとにしたWeb実装\n・HTML / CSS / JavaScript コーディング\n・CMSテンプレート実装\n※デザイン決定や要件定義には直接関与していません"
+      },
+      {
+        "heading": "実装を通して感じた課題",
+        "body": "初めて使用するCMSであったため、仕様や実装方法をキャッチアップしながら作業を進めました。\n\n実装を進める中で、CMSの構造上そのまま再現することが難しいUIがあり、本来どのような体験を実現したいのかを十分に理解しきれないまま、実装都合で判断せざるを得ない場面がありました。\n\nその結果、管理画面側のUI・UXについては、運用でカバーしていただく形になってしまった点が課題として残りました。"
+      },
+      {
+        "heading": "学び・次に活かしたいこと",
+        "body": "この経験を通して、運用で補う前提にするのではなく、限られた条件の中でもUI・UXをどこまで担保できるかを考える重要性を強く感じました。\n\n今後は、デザインと実装の両方の視点を持ち、より早い段階から最適な選択や提案ができるクリエイターを目指したいと考えています。"
       }
     ],
     "designComps": [
       {
-        "src": "images/placeholder.svg",
-        "alt": "イラスト（仮）",
+        "src": "images/works/restaurant-site_01.webp",
+        "alt": "飲食店運営会社サイト 画面01",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/restaurant-site_02.webp",
+        "alt": "飲食店運営会社サイト 画面02",
+        "size": "pc"
+      },
+      {
+        "src": "images/works/restaurant-site_03.webp",
+        "alt": "飲食店運営会社サイト 画面03",
         "size": "pc"
       }
     ]
   },
   {
-    "id": "sample-banner-01",
-    "title": "サンプルバナーセット",
-    "category": "デザイン",
-    "type": "自主制作",
-    "year": "2024",
-    "project": "架空キャンペーンバナー（仮データ）",
+    "id": "thecrosskbk-ec",
+    "title": "出版社向け CS-Cart ECサイト構築",
+    "category": "WEBサイト",
+    "type": "クライアントワーク",
+    "year": "2024.9–2024.11",
+    "project": "出版社様のCS-CartでのECサイト構築",
+    "url": "https://thecrosskbk.jp/",
     "thumbnail": "images/placeholder.svg",
     "visual": "images/placeholder.svg",
     "sections": [
       {
-        "heading": "目的",
-        "body": "仮データです。SNS・Web広告向けのバナーバリエーションを想定しています。"
+        "heading": "Client",
+        "body": "出版社"
       },
       {
-        "heading": "デザイン",
-        "body": "サイズ違いでも訴求文が読めるよう、要素の優先順位を揃えています。"
+        "heading": "Date",
+        "body": "2024.9〜2024.11"
       },
       {
-        "heading": "制作時間",
-        "body": "企画〜制作 2日"
+        "heading": "人員構成",
+        "body": "・デザイナー1名\n・ディレクター1名\n・開発メンバー4名"
+      },
+      {
+        "heading": "担当業務",
+        "body": "・機能開発、デザイン実装担当、お客様対応"
+      },
+      {
+        "heading": "ポイント",
+        "body": "管理画面での入力フィールドの追加、アイコンが登録されなかった場合に自動で頭文字を取得しランダムでロゴ（画像生成ではない）が表示されるなどのカスタマイズされた機能の開発、デザイン実装を行いました。"
+      },
+      {
+        "heading": "URL",
+        "body": "https://thecrosskbk.jp/"
       }
     ],
     "designComps": [
       {
         "src": "images/placeholder.svg",
-        "alt": "バナー（仮）",
+        "alt": "出版社向けCS-Cart ECサイト（仮画像）",
         "size": "pc"
       }
     ]

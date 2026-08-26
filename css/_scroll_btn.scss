@@ -1,49 +1,45 @@
+@use "variables" as *;
+
 /*========= ページトップのためのCSS ===============*/
 
-/*リンクの形状*/
 #page-top a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #6375a7;
+  background: var(--color-accent);
   border-radius: 30px;
   width: 60px;
   height: 60px;
-  color: rgb(255, 255, 255);
+  color: var(--color-white);
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 0.6rem;
+  font-size: var(--font-size-caption);
   transition: all 0.3s ease 0s;
-
   float: right;
   margin-right: 30px;
   margin-bottom: 30px;
 }
-//スマホサイズ
-@media screen and (max-width:768px){
+
+@media screen and (max-width: 768px) {
   #page-top a {
     margin-right: 10px;
     margin-bottom: 10px;
   }
 }
+
 #page-top a:hover {
-  background:#6375a7;
+  background: var(--color-accent);
 }
 
-
-/*リンクを右下に固定*/
 #page-top {
   position: fixed;
   right: 10px;
   bottom: 10px;
   z-index: 2;
-  /*はじめは非表示*/
   opacity: 0;
   transform: translateY(100px);
 }
-
-/*　上に上がる動き　*/
 
 #page-top.UpMove {
   animation: UpAnime 0.5s forwards;
@@ -60,8 +56,6 @@
     transform: translateY(0);
   }
 }
-
-/*　下に下がる動き　*/
 
 #page-top.DownMove {
   animation: DownAnime 0.5s forwards;

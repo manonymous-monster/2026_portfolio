@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* Breakpoints (Sass — media query 用) */
+$bp-sp: 767px;
+$bp-tab: 1080px;
+
+/* CSS custom properties */
+:root {
+  --color-bg: #f7f7f7;
+  --color-text: #1a1211;
+  --color-accent: #6375a7;
+  --color-muted: #919191;
+  --color-border: #dadada;
+  --color-white: #ffffff;
+  --color-nav-overlay: #c8c8c8;
+
+  --font-size-body: 1rem;
+  --font-size-h1: 1.5rem;
+  --font-size-small: 0.875rem;
+  --font-size-caption: 0.625rem;
+
+  /* Content width: PC */
+  --content-max-width: 920px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: $bp-tab) {
+  :root {
+    --content-max-width: 100%;
+  }
+}
+
+/* SP */
+@media screen and (max-width: $bp-sp) {
+  :root {
+    --content-max-width: 300px;
+  }
+}

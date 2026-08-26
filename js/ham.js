@@ -1,10 +1,19 @@
-//ハンバーガーメニューをクリックしたら、htmlとbtnにステータスを追加する
-$(".openbtn").click(function () {
-  $(this).toggleClass('active');
-  $("html").toggleClass('open');
-});
-//メニューエリアをクリックしたら、ステータスを解除する
-$(".nav").click(function () {
-  $(".openbtn").removeClass('active');
-  $("html").removeClass('open');
+document.addEventListener("DOMContentLoaded", function () {
+  var openBtn = document.querySelector(".openbtn");
+  var nav = document.querySelector(".nav");
+  var html = document.documentElement;
+
+  if (!openBtn) return;
+
+  openBtn.addEventListener("click", function () {
+    openBtn.classList.toggle("active");
+    html.classList.toggle("open");
+  });
+
+  if (nav) {
+    nav.addEventListener("click", function () {
+      openBtn.classList.remove("active");
+      html.classList.remove("open");
+    });
+  }
 });
