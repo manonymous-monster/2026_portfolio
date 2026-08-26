@@ -1,8 +1,24 @@
 # OS
 .DS_Store
+**/.DS_Store
 
-# Local images (not committed)
-images/
+# Images: ignore by default, then allow site + works assets
+images/*
+!images/works/
+!images/works/**
+!images/AMANO_PORTFOLIO.svg
+!images/AMANO_PORTFOLIO_icon.png
+!images/placeholder.svg
+!images/profile_img.jpg
+!images/sample.jpg
+!images/Photoshop.png
+!images/Indesign.png
+!images/ILLUSTORATOR.png
+!images/figma.png
+!images/CLIP_STUDIO.png
+!images/SQL.png
+!images/windows.png
+!images/code.png
 
 # Old work archives (kept locally, not committed)
 works/original/
