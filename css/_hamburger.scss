@@ -92,12 +92,11 @@
     background-color: var(--color-nav-overlay);
     opacity: 0.9;
     transition: all 0.6s;
-    margin-left: -20px;
+    margin-left: -1.5rem;
   }
 
   html.open .nav ul li a:hover {
-    opacity: 0.5;
-    transition: 0.3s;
+    color: var(--color-accent);
   }
 
   html.open body {

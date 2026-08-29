@@ -21,13 +21,13 @@
             '" src="' +
             escapeAttr(work.thumbnail) +
             '">' +
-            "</a>" +
             "<p>" +
             escapeHtml(work.title) +
             "<br>" +
             "<span>" +
             label +
             "</span></p>" +
+            "</a>" +
             "</li>"
           );
         })

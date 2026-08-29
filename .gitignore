@@ -25,6 +25,7 @@ images/**/.DS_Store
 
 # Old work archives (kept locally, not committed)
 works/original/
+BK/
 
 # Build / editor leftovers
 css/*.map

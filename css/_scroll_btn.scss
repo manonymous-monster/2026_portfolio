@@ -7,9 +7,9 @@
   justify-content: center;
   align-items: center;
   background: var(--color-accent);
-  border-radius: 30px;
-  width: 60px;
-  height: 60px;
+  border-radius: 2rem;
+  width: 4rem;
+  height: 4rem;
   color: var(--color-white);
   text-align: center;
   text-transform: uppercase;
@@ -17,14 +17,14 @@
   font-size: var(--font-size-caption);
   transition: all 0.3s ease 0s;
   float: right;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 768px) {
   #page-top a {
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -34,11 +34,11 @@
 
 #page-top {
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 0.5rem;
+  bottom: 0.5rem;
   z-index: 2;
   opacity: 0;
-  transform: translateY(100px);
+  transform: translateY(6rem);
 }
 
 #page-top.UpMove {
@@ -48,7 +48,7 @@
 @keyframes UpAnime {
   from {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(6rem);
   }
 
   to {
@@ -69,6 +69,6 @@
 
   to {
     opacity: 1;
-    transform: translateY(100px);
+    transform: translateY(6rem);
   }
 }

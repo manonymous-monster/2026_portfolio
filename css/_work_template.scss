@@ -23,17 +23,17 @@
 .info-container h6 {
   color: var(--color-muted);
   font-size: var(--font-size-small);
-  padding: 5px;
+  padding: 0.5rem;
   border-bottom: 1px solid var(--color-border);
   display: inline-block;
 }
 
 .caption-detail p {
-  padding: 5px;
+  padding: 0.5rem;
 }
 
 .design-comp {
-  margin-top: 100px;
+  margin-top: 6rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -42,7 +42,7 @@
 .design-comp img {
   width: 100%;
   max-width: 1000px;
-  margin: 25px;
+  margin: 1.5rem;
 }
 
 .design-comp .pc-size {
