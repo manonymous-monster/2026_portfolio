@@ -207,6 +207,14 @@ function renderProfile(profile, prefix) {
 				</div>`;
 }
 
+function renderWorkTags(tags) {
+  if (!tags || !tags.length) return "";
+  const items = tags
+    .map((tag) => `<li>${escapeHtml(tag)}</li>`)
+    .join("");
+  return `<ul class="work-tags">${items}</ul>`;
+}
+
 function renderWorkDetail(work, prefix) {
   const metaLine = `${escapeHtml(work.category)} | ${escapeHtml(work.type)}${
     work.year ? `（${escapeHtml(work.year)}）` : ""
@@ -230,6 +238,7 @@ function renderWorkDetail(work, prefix) {
 				<div class="caption-detail">
 					<h1>${escapeHtml(work.title)}</h1>
 					<p class="work-meta">${metaLine}</p>
+					${renderWorkTags(work.tags)}
 					<img src="${asset(prefix, work.visual)}" alt="${escapeAttr(work.title)}" class="main-visual">
 					${sectionsHtml}
 				</div>
