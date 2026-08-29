@@ -9,6 +9,9 @@ $bp-sp: 767px;
 $bp-tab: 1079px;
 $bp-pc: 1080px;
 
+/* SP sticky header clearance (margin-top + hamburger + gap) */
+$header-clearance-sp: calc(2.5rem + 50px + 0.75rem);
+
 /* CSS custom properties */
 :root {
   --color-bg: #f7f7f7;

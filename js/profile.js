@@ -15,9 +15,31 @@
         .join("");
 
       var policy = profile.policy || {};
+      var itemsHtml = (policy.items || [])
+        .map(function (item) {
+          return "<li>" + escapeHtml(item) + "</li>";
+        })
+        .join("");
+
+      var policyHtml = "";
+      if (policy.heading) {
+        policyHtml =
+          "<h3>" +
+          escapeHtml(policy.heading) +
+          "</h3>" +
+          (policy.title ? "<p>" + escapeHtml(policy.title) + "</p>" : "") +
+          (policy.lead ? "<p>" + escapeHtml(policy.lead) + "</p>" : "") +
+          (itemsHtml ? '<ul class="profile-list">' + itemsHtml + "</ul>" : "") +
+          (policy.closing ? "<p>" + escapeHtml(policy.closing) + "</p>" : "");
+      }
 
       container.innerHTML =
         '<div class="profile">' +
+        '<img alt="' +
+        escapeAttr(profile.photoAlt || profile.name) +
+        '" id="profile-img" src="' +
+        escapeAttr(profile.photo) +
+        '">' +
         '<div class="caption">' +
         "<h3>Name</h3>" +
         "<p><span>" +
@@ -25,41 +47,15 @@
         "</span></p>" +
         "<h3>Bio</h3>" +
         bioHtml +
+        policyHtml +
         "</div>" +
-        '<img alt="' +
-        escapeAttr(profile.photoAlt || profile.name) +
-        '" id="profile-img" src="' +
-        escapeAttr(profile.photo) +
-        '">' +
-        "</div>" +
-        renderBlock(policy);
+        "</div>";
     })
     .catch(function (err) {
       console.error(err);
       container.innerHTML =
         "<p>Profileデータを読み込めませんでした。ローカルサーバー経由で開いてください。</p>";
     });
-
-  function renderBlock(block) {
-    if (!block || !block.heading) return "";
-    var itemsHtml = (block.items || [])
-      .map(function (item) {
-        return "<li>" + escapeHtml(item) + "</li>";
-      })
-      .join("");
-
-    return (
-      '<div class="profile-block">' +
-      "<h3>" +
-      escapeHtml(block.heading) +
-      "</h3>" +
-      (block.title ? "<h4>" + escapeHtml(block.title) + "</h4>" : "") +
-      (block.lead ? "<p>" + escapeHtml(block.lead) + "</p>" : "") +
-      (itemsHtml ? '<ul class="profile-list">' + itemsHtml + "</ul>" : "") +
-      (block.closing ? "<p>" + escapeHtml(block.closing) + "</p>" : "") +
-      "</div>"
-    );
-  }
 
   function escapeHtml(str) {
     return String(str)

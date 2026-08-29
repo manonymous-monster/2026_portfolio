@@ -37,6 +37,18 @@
   margin: 0 0 0.5rem;
 }
 
+@media screen and (max-width: $bp-sp) {
+  /* SPヘッダーは height:0 の sticky のため、詳細タイトルが重ならないよう余白を確保 */
+  .info-container {
+    padding-top: $header-clearance-sp;
+  }
+
+  .caption-detail > h1 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
 .caption-detail .work-meta {
   color: var(--color-muted);
   font-size: var(--font-size-small);

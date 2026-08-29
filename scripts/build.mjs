@@ -189,21 +189,23 @@ function renderProfile(profile, prefix) {
     .map((item) => `<li>${escapeHtml(item)}</li>`)
     .join("\n\t\t\t\t\t\t");
 
+  const policyHtml = policy.heading
+    ? `<h3>${escapeHtml(policy.heading)}</h3>
+						${policy.title ? `<p>${escapeHtml(policy.title)}</p>` : ""}
+						${policy.lead ? `<p>${escapeHtml(policy.lead)}</p>` : ""}
+						${itemsHtml ? `<ul class="profile-list">\n\t\t\t\t\t\t${itemsHtml}\n\t\t\t\t\t</ul>` : ""}
+						${policy.closing ? `<p>${escapeHtml(policy.closing)}</p>` : ""}`
+    : "";
+
   return `<div class="profile">
+					<img alt="${escapeAttr(profile.photoAlt || profile.name)}" id="profile-img" src="${asset(prefix, profile.photo)}">
 					<div class="caption">
 						<h3>Name</h3>
 						<p><span>${escapeHtml(profile.name)}</span></p>
 						<h3>Bio</h3>
 						${bioHtml}
+						${policyHtml}
 					</div>
-					<img alt="${escapeAttr(profile.photoAlt || profile.name)}" id="profile-img" src="${asset(prefix, profile.photo)}">
-				</div>
-				<div class="profile-block">
-					<h3>${escapeHtml(policy.heading || "Policy")}</h3>
-					${policy.title ? `<h4>${escapeHtml(policy.title)}</h4>` : ""}
-					${policy.lead ? `<p>${escapeHtml(policy.lead)}</p>` : ""}
-					${itemsHtml ? `<ul class="profile-list">\n\t\t\t\t\t\t${itemsHtml}\n\t\t\t\t\t</ul>` : ""}
-					${policy.closing ? `<p>${escapeHtml(policy.closing)}</p>` : ""}
 				</div>`;
 }
 

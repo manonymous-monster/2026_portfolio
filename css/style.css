@@ -4,6 +4,7 @@
    Tablet:    768px〜1079px
    PC:        1080px〜
 */
+/* SP sticky header clearance (margin-top + hamburger + gap) */
 /* CSS custom properties */
 :root {
   --color-bg: #f7f7f7;
@@ -61,6 +62,16 @@
   margin: 0 0 0.5rem;
 }
 
+@media screen and (max-width: 767px) {
+  /* SPヘッダーは height:0 の sticky のため、詳細タイトルが重ならないよう余白を確保 */
+  .info-container {
+    padding-top: calc(2.5rem + 50px + 0.75rem);
+  }
+  .caption-detail > h1 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
 .caption-detail .work-meta {
   color: var(--color-muted);
   font-size: var(--font-size-small);
@@ -446,6 +457,18 @@ h6 {
   border: 0;
 }
 
+/* Top hero (index) */
+.wrap > .main-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .wrap > .main-visual {
+    padding-top: calc(2.5rem + 0px + 0rem);
+  }
+}
+
 /* ===============================
    Common Container
 ================================ */
@@ -534,26 +557,28 @@ h6 {
 ================================ */
 .profile {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
-  align-items: center;
+  align-items: start;
+  justify-items: center;
 }
 .profile p span {
   font-size: var(--font-size-h1);
 }
 .profile .caption {
   min-width: 0;
+  width: 100%;
+  text-align: left;
 }
 @media (max-width: 767px) {
   .profile {
-    grid-template-columns: 1fr;
     gap: 1.5rem;
-    text-align: center;
   }
 }
 
 #profile-img {
   width: 100%;
+  max-width: 280px;
   border-radius: 10px;
   object-fit: contain;
   display: block;
@@ -561,35 +586,7 @@ h6 {
 @media (max-width: 767px) {
   #profile-img {
     max-width: 200px;
-    margin-left: auto;
-    margin-right: auto;
   }
-}
-
-.profile-block {
-  width: 100%;
-  margin: 4rem auto 0;
-  text-align: left;
-}
-.profile-block h3 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: var(--font-size-h1);
-  color: var(--color-text);
-  border: none;
-  display: block;
-  padding: 0;
-}
-.profile-block h4 {
-  color: var(--color-muted);
-  font-size: var(--font-size-small);
-  padding: 0.5rem 0;
-  border-bottom: 1px solid var(--color-border);
-  display: inline-block;
-  margin: 1.5rem 0 0.5rem;
-}
-.profile-block p {
-  text-align: justify;
 }
 
 .profile-list {
