@@ -118,6 +118,7 @@ function headMeta({ title, description, ogType, ogImage, prefix }) {
 	<meta name="twitter:title" content="${ttl}">
 	<meta name="twitter:description" content="${desc}">
 	<meta name="twitter:image" content="${escapeAttr(img)}">
+	<link rel="icon" href="${asset(prefix, "favicon.ico")}" type="image/x-icon">
 	<link href="${asset(prefix, "css/reset.css")}" rel="stylesheet">
 	<link href="${asset(prefix, "css/style.css")}" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -331,6 +332,11 @@ function main() {
   // CSS (compiled style.css + reset)
   copyFile(path.join(ROOT, "css/reset.css"), path.join(DIST, "css/reset.css"));
   copyFile(path.join(ROOT, "css/style.css"), path.join(DIST, "css/style.css"));
+
+  const faviconSrc = path.join(ROOT, "favicon.ico");
+  if (fs.existsSync(faviconSrc)) {
+    copyFile(faviconSrc, path.join(DIST, "favicon.ico"));
+  }
 
   // Interactive JS only (content is baked into HTML)
   for (const file of ["ham.js", "nav-hover.js", "scroll-btn.js"]) {
