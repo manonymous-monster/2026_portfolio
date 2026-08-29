@@ -1,6 +1,6 @@
 [
   {
-    "id": "kyobunkwan-corporate",
+    "id": "bookstore-corp",
     "title": "出版社コーポレートサイトリニューアル",
     "category": "WEBサイト",
     "type": "クライアントワーク",
@@ -82,7 +82,7 @@
     ]
   },
   {
-    "id": "wand-plus-media",
+    "id": "owned-media",
     "title": "自社オウンドメディアサイトリニューアル",
     "category": "WEBサイト",
     "type": "自社制作",
@@ -239,7 +239,7 @@
     ]
   },
   {
-    "id": "goodtimingtea-shopify",
+    "id": "tea-shop",
     "title": "飲食店向け Shopify 自社サイト兼ECサイト構築",
     "category": "WEBサイト",
     "type": "クライアントワーク",
@@ -306,7 +306,7 @@
     ]
   },
   {
-    "id": "thecrosskbk-ec",
+    "id": "bookstore-mole",
     "title": "出版社向け CS-Cart ECサイト構築",
     "category": "WEBサイト",
     "type": "クライアントワーク",
