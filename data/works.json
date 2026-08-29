@@ -2,6 +2,7 @@
   {
     "id": "bookstore-corp",
     "title": "出版社コーポレートサイトリニューアル",
+    "description": "WordPressから別CMSへの移行。htmx絞り込み・タグ自動管理・データ移行、7ブログ約70ページの実装を担当。",
     "category": "WEBサイト",
     "type": "クライアントワーク",
     "year": "2025.7–2026.6",
@@ -84,6 +85,7 @@
   {
     "id": "owned-media",
     "title": "自社オウンドメディアサイトリニューアル",
+    "description": "WordPressテーマリニューアル。オフショア連携、テスト環境・デプロイ、管理画面設定や軽微な修正まで担当。",
     "category": "WEBサイト",
     "type": "自社制作",
     "year": "2025.1–2026.3",
@@ -142,6 +144,7 @@
   {
     "id": "plamodel-site",
     "title": "プラモデル販売サイト",
+    "description": "プラモデル販売EC。シミュレーターを中核に、拡張前提のCMS設計・多言語対応・オフショア連携・公開まで担当。",
     "category": "WEBサイト",
     "type": "クライアントワーク",
     "year": "2025.8",
@@ -191,6 +194,7 @@
   {
     "id": "restaurant-site",
     "title": "飲食店運営会社サイト",
+    "description": "飲食店運営会社サイト。デザインをもとにしたHTML/CSS/JS実装とCMSテンプレート実装を担当。",
     "category": "WEBサイト",
     "type": "クライアントワーク",
     "year": "2025.3",
@@ -241,6 +245,7 @@
   {
     "id": "tea-shop",
     "title": "飲食店向け Shopify 自社サイト兼ECサイト構築",
+    "description": "お茶販売サイト。オフショアとの実装連携・マネジメント、リリース時の諸設定とお客様対応を担当。",
     "category": "WEBサイト",
     "type": "クライアントワーク",
     "year": "2024.12–2025.2",
@@ -308,6 +313,7 @@
   {
     "id": "bookstore-mole",
     "title": "出版社向け CS-Cart ECサイト構築",
+    "description": "出版社向けCS-Cart EC。管理画面カスタムやアイコン未登録時の頭文字ロゴ表示など、機能開発とデザイン実装を担当。",
     "category": "WEBサイト",
     "type": "クライアントワーク",
     "year": "2024.9–2024.11",

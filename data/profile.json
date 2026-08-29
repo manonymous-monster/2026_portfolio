@@ -2,6 +2,7 @@
   "name": "Amano Rieko",
   "photo": "images/profile_img.jpg",
   "photoAlt": "プロフィール写真",
+  "description": "Web制作・フロントエンドを中心に、設計から実装・運用まで担当する Amano Rieko のポートフォリオサイトです。",
   "bio": [
     "静岡県出身🗻",
     "SEとしてローコード開発や公共システムの保守に携わった後、Web制作会社へキャリアチェンジ。",

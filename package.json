@@ -1,0 +1,16 @@
+{
+  "name": "2026-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:css": "sass css/style.scss css/style.css --no-source-map",
+    "build:html": "node scripts/build.mjs",
+    "build": "npm run build:css && npm run build:html",
+    "dev": "npm run build && vite",
+    "preview": "npm run build && npx --yes serve dist"
+  },
+  "devDependencies": {
+    "sass": "^1.85.0",
+    "vite": "^6.2.0"
+  }
+}

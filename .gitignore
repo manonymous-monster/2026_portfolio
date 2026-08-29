@@ -16,10 +16,18 @@ images/**/.DS_Store
 
 # Old work archives (kept locally, not committed)
 works/original/
+
+# Generated work detail pages (from npm run build)
+works/*/
+!works/original/
+!works/original/**
+
 BK/
 
 # Build / editor leftovers
 css/*.map
 css/OLD_style.txt
+node_modules/
+dist/
 
 *.bk

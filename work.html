@@ -2,74 +2,21 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>WORK | AMANO RIEKO PORTFOLIO</title>
-	<meta name="description" id="meta-description" content="Amano Rieko のポートフォリオ作品詳細ページです。">
-	<meta name="author" content="Amano Rieko">
-	<meta property="og:type" content="article">
-	<meta property="og:site_name" content="AMANO RIEKO PORTFOLIO">
-	<meta property="og:title" id="meta-og-title" content="WORK | AMANO RIEKO PORTFOLIO">
-	<meta property="og:description" id="meta-og-description" content="Amano Rieko のポートフォリオ作品詳細ページです。">
-	<meta property="og:image" content="/images/sample.jpg">
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" id="meta-twitter-title" content="WORK | AMANO RIEKO PORTFOLIO">
-	<meta name="twitter:description" id="meta-twitter-description" content="Amano Rieko のポートフォリオ作品詳細ページです。">
-	<meta name="twitter:image" content="/images/sample.jpg">
-	<link href="css/reset.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+	<meta name="robots" content="noindex">
+	<title>Redirecting… | AMANO RIEKO PORTFOLIO</title>
+	<script>
+		(function () {
+			var id = new URLSearchParams(location.search).get("id");
+			if (id) {
+				location.replace("works/" + encodeURIComponent(id) + "/");
+			} else {
+				location.replace("index.html");
+			}
+		})();
+	</script>
+	<meta http-equiv="refresh" content="0;url=index.html">
 </head>
 <body>
-	<div class="wrap">
-		<header class="header">
-			<a href="index.html"><img alt="天野 ポートフォリオ" src="images/AMANO_PORTFOLIO.svg"></a>
-			<div class="openbtn">
-				<span></span><span></span><span></span>
-			</div>
-			<div class="nav">
-				<nav>
-					<ul>
-						<li>
-							<a class="nav-link" href="index.html#WORKS">
-								<span class="nav-link__track">
-									<span class="nav-link__text">WORKS</span>
-									<span class="nav-link__text" aria-hidden="true">WORKS</span>
-								</span>
-							</a>
-						</li>
-						<li>
-							<a class="nav-link" href="index.html#PROFILE">
-								<span class="nav-link__track">
-									<span class="nav-link__text">PROFILE</span>
-									<span class="nav-link__text" aria-hidden="true">PROFILE</span>
-								</span>
-							</a>
-						</li>
-						<li>
-							<a class="nav-link" href="mailto:syugarunes@yahoo.co.jp?subject=%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">
-								<span class="nav-link__track">
-									<span class="nav-link__text">CONTACT</span>
-									<span class="nav-link__text" aria-hidden="true">CONTACT</span>
-								</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<div class="common-container">
-			<div class="info-container" id="work-detail"></div>
-		</div>
-	</div>
-	<footer class="footer">
-		<p id="page-top"><a href="#">PAGE TOP</a></p><small>&copy;AMANO&nbsp;RIEKO&nbsp;All Rights Reserved.</small>
-	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-	<script src="js/nav-hover.js"></script>
-	<script src="js/ham.js"></script>
-	<script src="js/scroll-btn.js"></script>
-	<script src="js/work-detail.js"></script>
+	<p>Redirecting… <a href="index.html">トップへ</a></p>
 </body>
 </html>

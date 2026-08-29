@@ -13,9 +13,9 @@
           var label = work.category + "&nbsp;|&nbsp;" + work.type;
           return (
             "<li>" +
-            '<a href="work.html?id=' +
+            '<a href="works/' +
             encodeURIComponent(work.id) +
-            '">' +
+            '/">' +
             '<img alt="' +
             escapeHtml(work.title) +
             '" src="' +
