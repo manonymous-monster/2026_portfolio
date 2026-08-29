@@ -15,11 +15,9 @@
         .join("");
 
       var policy = profile.policy || {};
-      var interests = profile.interests || {};
-      var favorite = profile.favorite || {};
 
       container.innerHTML =
-        '<div class="profile reverse">' +
+        '<div class="profile">' +
         '<div class="caption">' +
         "<h3>Name</h3>" +
         "<p><span>" +
@@ -34,9 +32,7 @@
         escapeAttr(profile.photo) +
         '">' +
         "</div>" +
-        renderBlock(policy) +
-        renderBlock(interests) +
-        renderFavorite(favorite);
+        renderBlock(policy);
     })
     .catch(function (err) {
       console.error(err);
@@ -61,34 +57,6 @@
       (block.lead ? "<p>" + escapeHtml(block.lead) + "</p>" : "") +
       (itemsHtml ? '<ul class="profile-list">' + itemsHtml + "</ul>" : "") +
       (block.closing ? "<p>" + escapeHtml(block.closing) + "</p>" : "") +
-      "</div>"
-    );
-  }
-
-  function renderFavorite(favorite) {
-    if (!favorite || !favorite.heading) return "";
-    var tags = (favorite.tags || []).join(" / ");
-    var detailsHtml = (favorite.details || [])
-      .map(function (detail) {
-        return (
-          "<h3>" +
-          escapeHtml(detail.label) +
-          "</h3>" +
-          "<p>" +
-          escapeHtml(detail.body) +
-          "</p>"
-        );
-      })
-      .join("");
-
-    return (
-      '<div class="profile-block">' +
-      "<h2>" +
-      escapeHtml(favorite.heading) +
-      "</h2>" +
-      (favorite.title ? "<h3>" + escapeHtml(favorite.title) + "</h3>" : "") +
-      (tags ? "<p>" + escapeHtml(tags) + "</p>" : "") +
-      detailsHtml +
       "</div>"
     );
   }

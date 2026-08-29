@@ -7,18 +7,9 @@ images/*
 !images/works/
 !images/works/**
 !images/AMANO_PORTFOLIO.svg
-!images/AMANO_PORTFOLIO_icon.png
 !images/placeholder.svg
 !images/profile_img.jpg
 !images/sample.jpg
-!images/Photoshop.png
-!images/Indesign.png
-!images/ILLUSTORATOR.png
-!images/figma.png
-!images/CLIP_STUDIO.png
-!images/SQL.png
-!images/windows.png
-!images/code.png
 
 # Keep OS junk out even under allowed image folders
 images/**/.DS_Store
@@ -30,3 +21,5 @@ BK/
 # Build / editor leftovers
 css/*.map
 css/OLD_style.txt
+
+*.bk
