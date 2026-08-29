@@ -50,10 +50,10 @@
 
     return (
       '<div class="profile-block">' +
-      "<h2>" +
+      "<h3>" +
       escapeHtml(block.heading) +
-      "</h2>" +
-      (block.title ? "<h3>" + escapeHtml(block.title) + "</h3>" : "") +
+      "</h3>" +
+      (block.title ? "<h4>" + escapeHtml(block.title) + "</h4>" : "") +
       (block.lead ? "<p>" + escapeHtml(block.lead) + "</p>" : "") +
       (itemsHtml ? '<ul class="profile-list">' + itemsHtml + "</ul>" : "") +
       (block.closing ? "<p>" + escapeHtml(block.closing) + "</p>" : "") +
