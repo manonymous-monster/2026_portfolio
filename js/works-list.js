@@ -22,9 +22,10 @@
             escapeAttr(work.thumbnail) +
             '">' +
             "<p>" +
+            '<span class="works_list__title">' +
             escapeHtml(work.title) +
-            "<br>" +
-            "<span>" +
+            "</span>" +
+            '<span class="works_list__meta">' +
             label +
             "</span></p>" +
             "</a>" +

@@ -1,8 +1,13 @@
 @charset "utf-8";
 
-/* Breakpoints (Sass — media query 用) */
+/* Breakpoints
+   SP:        〜767px
+   Tablet:    768px〜1079px
+   PC:        1080px〜
+*/
 $bp-sp: 767px;
-$bp-tab: 1080px;
+$bp-tab: 1079px;
+$bp-pc: 1080px;
 
 /* CSS custom properties */
 :root {
@@ -19,20 +24,13 @@ $bp-tab: 1080px;
   --font-size-small: 0.875rem;
   --font-size-caption: 0.625rem;
 
-  /* Content width: PC */
-  --content-max-width: 920px;
+  /* SP / Tablet: 最大幅 90% */
+  --content-max-width: 90%;
 }
 
-/* Tablet */
-@media screen and (min-width: 768px) and (max-width: $bp-tab) {
+/* PC: 1080px〜 */
+@media screen and (min-width: $bp-pc) {
   :root {
-    --content-max-width: 90%;
-  }
-}
-
-/* SP */
-@media screen and (max-width: $bp-sp) {
-  :root {
-    --content-max-width: 300px;
+    --content-max-width: 1040px;
   }
 }

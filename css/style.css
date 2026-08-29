@@ -1,5 +1,9 @@
 @charset "UTF-8";
-/* Breakpoints (Sass — media query 用) */
+/* Breakpoints
+   SP:        〜767px
+   Tablet:    768px〜1079px
+   PC:        1080px〜
+*/
 /* CSS custom properties */
 :root {
   --color-bg: #f7f7f7;
@@ -13,20 +17,14 @@
   --font-size-h1: 1.5rem;
   --font-size-small: 0.875rem;
   --font-size-caption: 0.625rem;
-  /* Content width: PC */
-  --content-max-width: 920px;
+  /* SP / Tablet: 最大幅 90% */
+  --content-max-width: 90%;
 }
 
-/* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1080px) {
+/* PC: 1080px〜 */
+@media screen and (min-width: 1080px) {
   :root {
-    --content-max-width: 90%;
-  }
-}
-/* SP */
-@media screen and (max-width: 767px) {
-  :root {
-    --content-max-width: 300px;
+    --content-max-width: 1040px;
   }
 }
 .info-container .main-visual {
@@ -87,7 +85,7 @@
   border: 1px solid var(--color-border);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1080px) {
+@media screen and (min-width: 768px) and (max-width: 1079px) {
   .design-comp .pc-size {
     max-width: 300px;
   }
@@ -191,6 +189,8 @@
     border-radius: 5px;
     margin: 0;
     z-index: 1000;
+    position: relative;
+    top: -0.2rem;
   }
   .openbtn span {
     display: inline-block;
@@ -373,8 +373,8 @@ h6 {
 @media (max-width: 767px) {
   .header {
     position: sticky;
-    top: 2.5rem;
-    height: 4rem;
+    top: 3.5rem;
+    height: 0;
     margin: 2.5rem 0 1.5rem;
     z-index: 900;
   }
@@ -404,6 +404,12 @@ h6 {
 .common-container h1 {
   text-align: center;
   margin: 2rem auto;
+}
+@media (max-width: 1079px) {
+  .common-container {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 767px) {
   .common-container h1 {
@@ -437,10 +443,18 @@ h6 {
   font-size: var(--font-size-small);
   color: var(--color-muted);
 }
+.works_list ul li .works_list__title {
+  display: block;
+  font-size: var(--font-size-body);
+  color: var(--color-text);
+}
+.works_list ul li .works_list__meta {
+  display: block;
+}
 .works_list ul li p {
   padding: 1rem 0;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1079px) {
   .works_list ul {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -451,6 +465,14 @@ h6 {
   }
   .works_list ul li p {
     padding: 1rem;
+  }
+  .works_list ul li .works_list__title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    line-height: 1.5;
+    min-height: 3em;
   }
 }
 
@@ -577,5 +599,8 @@ h6 {
   font-size: var(--font-size-caption);
   display: block;
 }
-
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 767px) {
+  .footer {
+    margin: 4.5rem auto 3rem;
+  }
+}
